@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <div>
+            <input type="text" class="visor_input" id="field1" value="0">
+            <div class="calc_linhas">
+                <button type="button" class="calc_botao_fun">mrc</button>           
+                <button type="button" class="calc_botao_fun">m-</button>           
+                <button type="button" class="calc_botao_fun">m+</button>           
+                <button type="button" onclick="operacao(this)" class="calc_botao_op" id="divide">/</button>        
+            </div>
+            <div class="calc_linhas">
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n7">7</button>
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n8">8</button>
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n9">9</button>
+                <button type="button" onclick="operacao(this)" class="calc_botao_op" id="multi">*</button>
+            </div>
+            <div class="calc_linhas">
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n4">4</button>
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n5">5</button>
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n6">6</button>
+                <button type="button" onclick="operacao(this)" class="calc_botao_op" id="sub">-</button>
+            </div>
+            <div class="calc_linhas">
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n1">1</button>
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n2">2</button>
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n3">3</button>
+                <button type="button" onclick="operacao(this)" class="calc_botao_op" id="soma">+</button>
+            </div>
+            <div class="calc_linhas">
+                <button type="button" onclick="numero(this)" class="calc_botao" id="n0">0</button>
+                <button type="button" onclick="decimal(this, true)" class="calc_botao" id="decimal">.</button>
+                <button type="button" onclick="cleartxt()" class="calc_botao" id="C">C</button>
+                <button type="button" onclick="calcular()" class="calc_botao_res" id="resultado">=</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
