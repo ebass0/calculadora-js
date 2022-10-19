@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <title>Calculadora</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <script src="script.js"></script>
+    <script src="script/script.js"></script>
 </head>
 <body>
-    <form>
-        <div>
-            <input type="text" class="visor_input" id="field1" value="0">
+    <form id="calculadora">
+        <div class="visor">
+            <input type="text" name="res" class="visor_input" id="res" value="0">
+        </div>
             <div class="calc_linhas">
                 <button type="button" class="calc_botao_fun">mrc</button>           
                 <button type="button" class="calc_botao_fun">m-</button>           
@@ -40,7 +41,6 @@
                 <button type="button" onclick="cleartxt()" class="calc_botao" id="C">C</button>
                 <button type="button" onclick="calcular()" class="calc_botao_res" id="resultado">=</button>
             </div>
-        </div>
     </form>
 </body>
 </html>
