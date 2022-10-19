@@ -9,7 +9,7 @@
 <body>
     <form id="calculadora">
         <div class="visor">
-            <input type="text" name="res" class="visor_input" id="res" value="0">
+            <input type="text" name="res" class="visor_input" id="res" value="">
         </div>
             <div class="calc_linhas">
                 <button type="button" class="calc_botao_fun">mrc</button>           
@@ -37,7 +37,7 @@
             </div>
             <div class="calc_linhas">
                 <button type="button" onclick="numero(this)" class="calc_botao" id="n0">0</button>
-                <button type="button" onclick="decimal(this, true)" class="calc_botao" id="decimal">.</button>
+                <button type="button" onclick="decimal(this, true)" class="calc_botao" id="dec">.</button>
                 <button type="button" onclick="cleartxt()" class="calc_botao" id="C">C</button>
                 <button type="button" onclick="calcular()" class="calc_botao_res" id="resultado">=</button>
             </div>
