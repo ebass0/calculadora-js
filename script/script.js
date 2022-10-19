@@ -20,14 +20,14 @@ function operacao(elementId) {
 }
 
 function cleartxt() {
-  document.getElementById('res').value = '0';
+  document.getElementById('res').value = '';
   document.getElementById('decimal').disabled = false;
 }
 
 function decimal(elementId, status) {
   var outputValueTo = document.getElementById('res');
   outputValueTo.value += elementId.textContent;
-  document.getElementById('decimal').disabled = status;
+  document.getElementById('dec').disabled = status;
 }
 
 function calcular() {
